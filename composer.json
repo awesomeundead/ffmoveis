@@ -1,0 +1,13 @@
+{
+    "name": "awesomeundead/ffmoveis",
+    "type": "project",
+    "require": {
+        "nikic/fast-route": "^1.3"
+    },
+    "authors": [
+        {
+            "name": "Daniel",
+            "email": "daniel.ximenes@outlook.com"
+        }
+    ]
+}
