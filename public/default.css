@@ -158,3 +158,64 @@ nav a:hover
 {
     width: 32px;
 }
+
+@media only screen and (max-width: 768px)
+{
+    .width
+    {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    header
+    {
+        display: block;
+    }
+
+    .wide
+    {
+        padding: 20px 10px;
+    }
+
+    .carousel
+    {
+        width: 100%;
+    }
+
+    .carousel button
+    {
+        height: 42px;
+        width: 32px;
+    }
+
+    .carousel .side.left
+    {
+        left: 0;
+    }
+
+    .carousel .side.right
+    {
+        right: 0;
+    }
+
+    .carousel .side.left button
+    {
+        background: url('icon_arrow_left.png') center/auto 32px no-repeat;
+    }
+
+    .carousel .side.right button
+    {
+        background: url('icon_arrow_right.png') center/auto 32px no-repeat;
+    }
+
+    .carousel .container
+    {
+        overflow-x: auto;
+        width: 100%;
+    }
+
+    .carousel img
+    {
+        width: 100%;
+    }
+}
