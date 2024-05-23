@@ -60,7 +60,7 @@ nav a:hover
     border-bottom: 2px solid #333;
 }
 
-.wide-carousel
+.wide
 {
     background: linear-gradient(90deg, #FFFFFF, #0066d0);
     border-bottom: 5px solid #333;
@@ -138,4 +138,23 @@ nav a:hover
 {
     padding: 10px;
     text-align: center;
+}
+
+.social
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social .label
+{
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.icon img
+{
+    width: 32px;
 }
