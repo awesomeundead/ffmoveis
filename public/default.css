@@ -7,12 +7,13 @@
 html, body
 {
     height: 100%;
+    margin: 0;
 }
 
-body
+.width
 {
     margin: 0 auto;
-    width: 1000px;
+    width: 1200px;
 }
 
 header
@@ -23,6 +24,7 @@ header
 
 header div
 {
+    align-items: end;
     display: flex;
     gap: 5px;
     padding: 5px 0;
@@ -31,6 +33,11 @@ header div
 header img
 {
     height: 128px;
+}
+
+header h1
+{
+    margin: 0;
 }
 
 nav
@@ -53,29 +60,82 @@ nav a:hover
     border-bottom: 2px solid #333;
 }
 
-section
+.wide-carousel
 {
+    background: linear-gradient(90deg, #FFFFFF, #0066d0);
+    border-bottom: 5px solid #333;
+    border-top: 5px solid #333;
+    padding: 20px 0;
+}
+
+.carousel
+{
+    margin: auto;
+    position: relative;
+    width: 800px;
+}
+
+.carousel .side
+{
+    align-items: center;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 5px;
+    height: 100%;
+    position: absolute;
+    top: 0;
 }
 
-.item
+.carousel button
 {
-    border: 1px solid #999;
-    border-radius: 10px;
-    padding: 5px;
+    border: none;
+    border-radius: 10%;
+    cursor: pointer;
+    height: 138px;
+    width: 106px;
 }
 
-.item .images
+.carousel .side.left
+{
+    left: -128px;
+}
+
+.carousel .side.left button
+{
+    background: url('icon_arrow_left.png') center no-repeat;
+}
+
+.carousel .side.right
+{
+    right: -120px;
+}
+
+.carousel .side.right button
+{
+    background: url('icon_arrow_right.png') center no-repeat;
+}
+
+.carousel .side.left button:hover,
+.carousel .side.right button:hover
+{
+    background-color: rgba(255, 255, 255, 50%);
+}
+
+.carousel .container
 {
     border-radius: 10px;
-    outline: 5px solid #FFF;
     display: flex;
+    gap: 10px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    width: 800px;
 }
 
-.item .images img
+.carousel img
 {
-    width: 50%;
+    width: 800px;
+}
+
+.description
+{
+    padding: 10px;
+    text-align: center;
 }
